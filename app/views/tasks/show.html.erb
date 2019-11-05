@@ -1,0 +1,10 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.completed %><%= @task.details %></p>
+
+<a href="tasks_path(@task)">All Tasks</a>
+<a href="edit_task_path(@task)">Edit Task</a>
+<a href="tasks_path(@task)">Delete Task <%= @task.destroy %></a>
+
+<%= link_to All Tasks, tasks_path %>
+<%= link_to Edit Task, edit_task_path %>
+<%= link_to Delete Task, tasks_path %>
